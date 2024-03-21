@@ -1,0 +1,22 @@
+stages:
+  - build  # create a docker container and build the project
+  - test   # run integration and unit test
+  - deploy # deploy to production
+
+build-job:
+  stage: build
+  script:
+    - dotnet build -t ShoppingCard .
+    - docker run -it --name ShoppingCard -d ShoppingCard
+
+test-job1:
+  stage: test
+  script:
+    - echo "A mock test"
+    - echo "Everything is alright"
+
+deploy-prod:
+  stage: deploy
+  environment: production
+  script:
+    - rsync 
