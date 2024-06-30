@@ -1,26 +1,16 @@
-# gammerlgaard-shopping-cart
-Shopping cart microservices base on [Gammerlgaard's book][1].
+# ECOMMERCE MICROSERVICE
 
-## Quickstart
+## Overview of the ecommerce microservice
+List of microservices:
+- [Shopping Cart](https://gitlab.com/HarimbolaSantatra/ecommerce-shopping-cart): handle user's cart
+- [Product Catalog](): handle the inventory
+- [Account Service](https://gitlab.com/HarimbolaSantatra/ecommerce-account): handle user's account
 
-    git clone https://github.com/HarimbolaSantatra/gammerlgaard-shopping-cart
+## Setup
 
-## ABOUT THE PROJECT
-### Branch
-| Branch | Description |
-| --- | --- |
-| master | Main code |
-
-### Overview of the Shopping Cart microservice
-Microservices:
-- [Shopping Cart][2]
-- Product catalog
-- Price Calculation
+    git clone --recurse-submodules https://gitlab.com/HarimbolaSantatra/ecommerce-microservices
+    docker compose up -d
 
 ## Resources:
 - [Git submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules)
-- [ Gammerlgaard's book ][1]
 - [Containerize a .NET app](https://learn.microsoft.com/en-us/dotnet/core/docker/build-container?tabs=linux&pivots=dotnet-8-0)
-
-[1]: https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiAvovAk_6EAxVJXUEAHezbAmwQFnoECCwQAQ&url=https%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3DiIsKzgEACAAJ%26printsec%3Dfrontcover%26source%3Dgbs_atb&usg=AOvVaw3L2E4b--daQTJPSenAp4Q9&opi=89978449
-[2]: https://gitlab.com/HarimbolaSantatra/shoppingcart

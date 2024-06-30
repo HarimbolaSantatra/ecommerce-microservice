@@ -1,0 +1,3 @@
+- Add one deployement script or playbook or terraform module
+- add Product Catalogue service
+- add front end service
