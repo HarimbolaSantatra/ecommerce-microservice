@@ -1,0 +1,21 @@
+networks:
+  ecommerce-mcsv:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.30.0.0/16
+          gateway: 172.30.0.1
+
+services:
+  account_mcsv:
+    container_name: account_mcsv
+    hostname: account_mcsv
+    image: account_mcsv
+    build:
+      context: ecommerce-account
+    networks:
+      - ecommerce-mcsv
+    environment:
+      - DB_HOST=172.30.0.1
+    ports:
+      - "5010:8080"
