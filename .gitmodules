@@ -1,3 +1,9 @@
 [submodule "ecommerce-account"]
 	path = ecommerce-account
 	url = https://gitlab.com/HarimbolaSantatra/ecommerce-account
+[submodule "shopping-cart"]
+	path = shopping-cart
+	url = https://gitlab.com/HarimbolaSantatra/ecommerce-shopping-cart
+[submodule "product-catalogue"]
+	path = product-catalogue
+	url = https://github.com/HarimbolaSantatra/ecommerce-product-catalogue
