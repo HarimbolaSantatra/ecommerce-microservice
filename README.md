@@ -14,9 +14,10 @@ Clone this repository:
 
     git clone --recurse-submodules https://gitlab.com/HarimbolaSantatra/ecommerce-microservices
 
-Build the projects and launch the compose file:
+Build the projects, start dependencies and launch the compose file:
 
     make
+    sudo ./services.sh
     docker compose up -d
 
 
