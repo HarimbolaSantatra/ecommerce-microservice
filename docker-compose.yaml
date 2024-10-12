@@ -1,5 +1,5 @@
 networks:
-  ecommerce-mcsv:
+  music-stream:
     driver: bridge
     ipam:
       config:
@@ -7,14 +7,14 @@ networks:
           gateway: 172.30.0.1
 
 services:
-  account_mcsv:
-    container_name: account_mcsv
-    hostname: account_mcsv
-    image: account_mcsv
+  backend-svc:
+    container_name: backend-svc
+    hostname: backend-svc
+    image: backend-svc
     build:
-      context: ecommerce-account
+      context: music-stream
     networks:
-      - ecommerce-mcsv
+      - music-stream
     environment:
       - DB_HOST=172.30.0.1
     ports:

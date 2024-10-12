@@ -1,26 +1,21 @@
-# ECOMMERCE MICROSERVICE
+# MUSIC STREAM MICROSERVICES
 
-## Overview of the ecommerce microservice
+## Overview of the music stream microservice
 List of microservices:
 | Microservices | Description | Exposed port | Language | Repo and CI/CD technology |
 | --- | --- | --- | --- | --- |
-| [Account Service](https://gitlab.com/HarimbolaSantatra/ecommerce-account) | Manage user accounts | 5010 | Dotnet | Gitlab |
-| [Shopping Cart](https://gitlab.com/HarimbolaSantatra/ecommerce-shopping-cart) | Handle user's cart and number of items in the shopping cart | 5011 | Dotnet  | Gitlab |
-| [Product Catalog](https://github.com/HarimbolaSantatra/ecommerce-product-catalogue) | Handle the inventory | 5012 | Dotnet  | Github |
+| [Back-end](https://gitlab.com/HarimbolaSantatra/music-stream) | Backend | 5010 | Dotnet | Gitlab |
+| Account | wip | wip | wip | wip |
+| Front-end | wip | wip | wip | wip |
 
 
 ## Setup
 Clone this repository:
 
-    git clone --recurse-submodules https://gitlab.com/HarimbolaSantatra/ecommerce-microservices
+    git clone --recurse-submodules https://github.com/HarimbolaSantatra/music-stream-master.git
 
 Build the projects, start dependencies and launch the compose file:
 
     make
     sudo ./services.sh
     docker compose up -d
-
-
-## Resources:
-- [Git submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules)
-- [Containerize a .NET app](https://learn.microsoft.com/en-us/dotnet/core/docker/build-container?tabs=linux&pivots=dotnet-8-0)
