@@ -1,4 +1,5 @@
 # MUSIC STREAM MICROSERVICES
+A music streaming microservices.
 
 ## Overview of the music stream microservice
 List of microservices:
